@@ -96,8 +96,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content {
+    display: flex;
+    flex-direction: column;
+}
 
 
+.nav-bar {
+    width: 960px;
+    background: #276176;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-bar > .logo {
+    height: 50px;
+    padding-top: 5px;
+    margin-right: 100px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    vertical-align: middle;
+}
+
+.nav-options > .nav-option {
+    display: flex;
+    line-height: 55px;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: oswald, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
 
 
 
