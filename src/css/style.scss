@@ -154,10 +154,27 @@ main {
     }
 
     .main-content {
-        height: 200px;
         background: $accent-color;
         .main-content-container {
+            .location {
+                color: $dark-color;
+                padding: 25px;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
 
+                .location-icon {
+                    font-size: 30px;
+                }
+                .location-description {
+                    font-family: mr-eaves-modern, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-size: 28px;
+                    text-align: left;
+                    margin-right: 15px;
+                }
+            }
         }
     }
 }
