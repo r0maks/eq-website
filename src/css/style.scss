@@ -154,29 +154,82 @@ main {
     }
 
     .main-content {
-        background: $accent-color;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         .main-content-container {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
             .location {
                 color: $dark-color;
-                padding: 25px;
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
-
-                .location-icon {
-                    font-size: 30px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .contact-info {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 300px;
+                    padding: 5px;
+                    .location-details {
+                        display: flex;
+                        margin-bottom: 10px;
+                        .location-icon {
+                            font-size: 30px;
+                            margin-right: 10px;
+                            color: $blue-color;
+                        }
+                        .location-description {
+                            font-family: mr-eaves-modern, sans-serif;
+                            font-weight: 200;
+                            font-style: normal;
+                            font-size: 24px;
+                            text-align: left;
+                            margin-right: 15px;
+                        }
+                    }
                 }
-                .location-description {
-                    font-family: mr-eaves-modern, sans-serif;
-                    font-weight: 200;
-                    font-style: normal;
-                    font-size: 28px;
-                    text-align: left;
-                    margin-right: 15px;
+
+                .location-map {
+                    iframe {
+                        display: flex;
+                        width: 350px;
+                        height: 170px;
+                        border: solid, 2px, $blue-color;
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+            .features {
+                color: $dark-color;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                padding-top: 50px;
+                padding-bottom: 25px;
+                .feature-tile {
+                    border-radius: 2px;
+                    background: $light-color;
+                    height: 300px;
+                    width: 300px;
+                    margin-right: 10px;
                 }
             }
         }
     }
+}
+
+.accent-bg {
+    background: $accent-color;
+}
+
+.black-bg {
+    background: $black;
 }
 
 
