@@ -9,6 +9,16 @@ body {
   user-select: none;
 }
 
+footer {
+  padding: 10px;
+  color: $light-color;
+  background: #2d3436;
+  font-family: roboto-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+
 /* HEADER */
 
 header {

@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # Variables (Colors, Fonts, sizes)
 --------------------------------------------------------------*/
-@import "fonts";
 @import "variables";
 
 /*--------------------------------------------------------------
@@ -65,7 +64,7 @@ header {
         flex-direction: column;
         justify-content: flex-end;
         img {
-            height: 45px;
+            height: 50px;
         }
     }
 }
@@ -100,19 +99,56 @@ header {
 }
 
 main {
+    display: flex;
     .backdrop {
         filter: opacity(.8);
-        img {
-            width: 100%;
-        }
+        width: 100%;
+        color: $light-color;
+        font-family: roboto,sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        background-position: center center;
+		background-repeat:  no-repeat;
+		background-attachment: fixed;
+		background-size:  cover;
 
-        &-title {
-            color: $light-color;
-            font-size: 36px;
-            font-family: roboto,sans-serif;
-            font-weight: 200;
-            font-style: normal;
+        &-content {
+            background-color: rgba(0,0,0,.65);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
 
+            &-container {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: $site-width;
+                padding-top: 50px;
+                padding-bottom: 60px;
+                &-title {
+                    font-family: roboto-condensed, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 34px;
+                    margin-bottom: 10px;
+                }
+                &-description {
+                    font-family: mr-eaves-modern, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-size: 25px;
+                    padding:50px;
+                    padding-top: 20px;
+                    padding-bottom: 25px;
+
+                }
+                &-byline {
+                    padding: 20px;
+                    font-size: 22px;
+                    background: rgba($accent-color, 0.8);
+                }
+            }
         }
     }
 }
