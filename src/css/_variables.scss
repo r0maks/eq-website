@@ -1,4 +1,21 @@
-$themeColor-Light: #f3e2c7;
-$themeColor-Dark:#b68d4c;
 
-$theme-font:    verdana, sans-serif;
+// sizes
+$site-width: 900px;
+
+// colors
+$light-color: #ecf0f1;
+$blue-color: #276176;
+$dark-color: #3b3f42;
+$accent-color: #f0c15c;
+
+// fonts
+$foco: foco, sans-serif;
+$oswald: oswald, sans-serif;
+$menco: menco, sans-serif;
+
+// transitions
+$ease-out: ease-in-out 0.2s;
+
+
+// border 
+$border: 1px solid $blue-color;

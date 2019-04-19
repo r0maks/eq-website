@@ -5,53 +5,23 @@
 */
 
 body {
-  background: $themeColor-Light;
+  background: $blue-color;
   user-select: none;
-}
-
-main {
-
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 200px;
-  }
 }
 
 /* HEADER */
 
 header {
-  display: inline-block;
-  width: 100%;
-  background: #ccc;
+  display: flex;
+  justify-content: center;
 
   nav {
     float: right;
+    padding-top: 10px;
 
     li {
       float: left;
       margin-left: 10px;
     }
   }
-}
-
-/* EXAMPLE SECTION */
-
-section.example {
-  width: 100%;
-
-  .cards {
-    display: inline-block;
-    margin-bottom: -4px;
-  }
-
-  article {
-    float: left;
-  }
-}
-
-/* FOOTER */
-
-footer {
-  display: block;
-  width: 100%;
 }

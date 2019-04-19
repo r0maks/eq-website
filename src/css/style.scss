@@ -21,3 +21,89 @@
 # Responsive Bug Fixes
 --------------------------------------------------------------*/
 @import "media";
+
+header {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        width: $site-width;
+        padding: 10px;
+    }
+    nav {
+        .tab {
+            margin-left: 18px;
+            color: $light-color;
+            font-family: roboto,sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 22px;
+            cursor: pointer;
+
+            &:hover {
+                color:$accent-color;
+                text-shadow: none;
+            }
+        }
+        .active-tab {
+            color:$accent-color;
+            text-shadow: none;
+        }
+        #hamburger {
+            color: $light-color;
+            display: flex;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .active-burger {
+            color:$accent-color !important;
+        }
+    }
+
+    .header-image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+            height: 45px;
+        }
+    }
+}
+
+.burger-options {
+    color: $light-color;
+    font-size: 36px;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    background:$dark-color;
+    padding: 10px;
+    opacity: .9;
+    visibility: hidden;
+    box-shadow: 0 4px 6px -6px $dark-color;
+    transition: $ease-out;
+
+    ul {
+        padding: 2px;
+    }
+
+    .active-burger-tab {
+        color: $accent-color;
+    }
+
+    &-active {
+        visibility: initial;
+    }
+}
+
+main {
+    .backdrop {
+        img {
+            width: 100%;
+        }
+    }
+}
