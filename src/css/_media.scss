@@ -25,16 +25,33 @@
 
         .feature-tile {
             width: 100% !important;
-
-            .text-content {
-                width: 400PX;
-                margin: auto;
-            }
         }
     }
 
     .location {
         flex-direction: column !important;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    // hide the other tab options
+
+    .features {
+        .feature-tile {
+            width: 30% !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 930px) {
+    // hide the other tab options
+
+    .features {
+        .feature-tile {
+            width: 40% !important;
+        }
     }
 
 }

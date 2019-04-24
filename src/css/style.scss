@@ -218,10 +218,11 @@ main {
                 .feature-tile {
                     border-radius: 2px;
                     min-height: 250px;
-                    width: 30%;
+                    width: 20%;
                     align-self: center;
                     margin-left: 5px;
                     margin-right: 5px;
+                    margin-bottom: 20px;
 
                     .feature-tile-title {
                         font-size: 25px;
@@ -242,7 +243,8 @@ main {
                         text-align: left;
 
                         iframe, img {
-                            height: 165px;
+                            height: 200px;
+                            width: 300px;
                             align-self: center;
                             flex: 0 0 auto;
                             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
