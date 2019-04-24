@@ -84,6 +84,7 @@ header {
     visibility: hidden;
     box-shadow: 0 4px 6px -6px $dark-color;
     transition: $ease-out;
+    z-index: 100;
 
     ul {
         padding: 2px;
@@ -167,8 +168,8 @@ main {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
-                padding-top: 50px;
-                padding-bottom: 50px;
+                padding-top: 25px;
+                padding-bottom: 25px;
                 .contact-info {
                     display: flex;
                     justify-content: center;
@@ -208,16 +209,40 @@ main {
             .features {
                 color: $dark-color;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 flex-direction: row;
-                padding-top: 50px;
+                flex-wrap: wrap;
+                padding-top: 25px;
                 padding-bottom: 25px;
                 .feature-tile {
                     border-radius: 2px;
-                    background: $light-color;
-                    height: 300px;
-                    width: 300px;
-                    margin-right: 10px;
+                    min-height: 200px;
+                    width: 30%;
+                    align-self: center;
+                    margin-left: 5px;
+                    margin-right: 5px;
+
+                    .feature-tile-title {
+                        font-size: 25px;
+                        font-family: roboto-condensed,sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        padding: 10px;
+                        color: $accent-color;
+                    }
+                    .feature-tile-content {
+                        color: $light-color;
+                        font-family: mr-eaves-modern, sans-serif;
+                        font-weight: 200;
+                        font-style: normal;
+                        font-size: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                    }
+                    .feature-tile-link {
+
+                    }
                 }
             }
         }
@@ -228,8 +253,18 @@ main {
     background: $accent-color;
 }
 
+
 .black-bg {
     background: $black;
+}
+
+.link-text {
+    color: $accent-color;
+    text-decoration: underline;
+}
+
+.accent-text {
+    color: $accent-color;
 }
 
 
