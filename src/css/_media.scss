@@ -20,5 +20,21 @@
 @media only screen and (max-width: 700px) {
     // hide the other tab options
 
+    .features {
+        flex-direction: column !important;
+
+        .feature-tile {
+            width: 100% !important;
+
+            .text-content {
+                width: 400PX;
+                margin: auto;
+            }
+        }
+    }
+
+    .location {
+        flex-direction: column !important;
+    }
 
 }

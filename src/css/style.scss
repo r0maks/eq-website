@@ -168,6 +168,7 @@ main {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+                align-items: center;
                 padding-top: 25px;
                 padding-bottom: 25px;
                 .contact-info {
@@ -216,7 +217,7 @@ main {
                 padding-bottom: 25px;
                 .feature-tile {
                     border-radius: 2px;
-                    min-height: 200px;
+                    min-height: 250px;
                     width: 30%;
                     align-self: center;
                     margin-left: 5px;
@@ -239,6 +240,13 @@ main {
                         display: flex;
                         flex-direction: column;
                         text-align: left;
+
+                        iframe, img {
+                            height: 165px;
+                            align-self: center;
+                            flex: 0 0 auto;
+                            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                        }
                     }
                     .feature-tile-link {
 
