@@ -224,7 +224,7 @@ main {
                     margin-right: 5px;
                     margin-bottom: 20px;
 
-                    .feature-tile-title {
+                    &-title {
                         font-size: 25px;
                         font-family: roboto-condensed,sans-serif;
                         font-weight: 300;
@@ -232,7 +232,7 @@ main {
                         padding: 10px;
                         color: $accent-color;
                     }
-                    .feature-tile-content {
+                    &-content {
                         color: $light-color;
                         font-family: mr-eaves-modern, sans-serif;
                         font-weight: 200;
@@ -250,9 +250,16 @@ main {
                             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                         }
                     }
-                    .feature-tile-link {
-
+                    &-link {
+                        font-family: mr-eaves-modern, sans-serif;
+                        font-weight: 200;
+                        font-style: normal;
+                        font-size: 20px;
+                        margin-top: 10px;
                     }
+                }
+                .resizeable-tile {
+                    width: 80%;
                 }
             }
         }
