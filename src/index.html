@@ -84,9 +84,9 @@
           <li class="tab" id="tab-select-1">home</li>
           <li class="tab" id="tab-select-2">audio</li>
           <li class="tab" id="tab-select-3">video</li>
-          <li class="tab" id="tab-select-5">contact</li>
-          <li class="tab" id="tab-select-6">rates</li>
-          <li class="tab" id="tab-select-7">photos</li>
+          <li class="tab" id="tab-select-4">contact</li>
+          <li class="tab" id="tab-select-5">rates</li>
+          <li class="tab" id="tab-select-6">photos</li>
           <li id="hamburger" onclick="burgerClicked()">
             <i class="fas fa-bars"></i>
           </li>
@@ -96,11 +96,12 @@
   </header>
   <div id="burger-options" class="burger-options">
     <ul>
-      <li id="burger-tab-1" onclick="changeTab(1)">about</li>
-      <li id="burger-tab-2" onclick="changeTab(2)">resumé</li>
-      <li id="burger-tab-3" onclick="changeTab(3)">skills</li>
-      <!-- <li id="burger-tab-4" onclick="changeTab(4)">portraits</li> -->
-      <li id="burger-tab-5" onclick="changeTab(5)">contact</li>
+      <li id="burger-tab-1" onclick="changeTab(1)">home</li>
+      <li id="burger-tab-2" onclick="changeTab(2)">audio</li>
+      <li id="burger-tab-3" onclick="changeTab(3)">video</li>
+      <li id="burger-tab-4" onclick="changeTab(4)">contact</li>
+      <li id="burger-tab-5" onclick="changeTab(5)">rates</li>
+      <li id="burger-tab-6" onclick="changeTab(6)">photos</li>
     </ul>
   </div>
 
@@ -136,8 +137,10 @@
               </div>
               <div class="location-description">
                 Downtown Fort Myers
-                <br> 2220 Altamont Ave
-                <br> Fort Myers, Florida 33901
+                <a class="link-text-alt" href="">
+                  <br> 2220 Altamont Ave
+                  <br> Fort Myers, Florida 33901
+                </a>
               </div>
             </div>
             <div class="location-details">
@@ -145,7 +148,7 @@
                 <i class="fas fa-phone-square"></i>
               </div>
               <div class="location-description">
-                239 217 0470
+                <a class="link-text-alt" href="">239 217 0470</a>
               </div>
             </div>
           </div>
@@ -195,7 +198,7 @@
             </div>
           </div>
 
-          <div class="feature-tile resizeable-tile">
+          <div class="feature-tile reviews-tile">
             <div class="feature-tile-title">
               Client Reviews
             </div>
@@ -210,7 +213,8 @@
               </span>
               <br>
               <span>
-                I've been recording with Josh since early 2016. Since then, his place has become my second home. Good dude always - take care of me.
+                I've been recording with Josh since early 2016. Since then, his place has become my second home. Good dude always - take
+                care of me.
                 <span class="accent-text">-Kenson Gerard</span>
               </span>
             </div>

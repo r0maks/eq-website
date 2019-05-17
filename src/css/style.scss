@@ -72,7 +72,7 @@ header {
 .burger-options {
     color: $light-color;
     font-size: 36px;
-    font-family: roboto,sans-serif;
+    font-family: mr-eaves-modern,sans-serif;
     font-weight: 200;
     font-style: normal;
     position: absolute;
@@ -223,6 +223,8 @@ main {
                     margin-left: 5px;
                     margin-right: 5px;
                     margin-bottom: 20px;
+                    padding: 5px;
+                    padding-bottom: 10px;
 
                     &-title {
                         font-size: 25px;
@@ -231,6 +233,12 @@ main {
                         font-style: normal;
                         padding: 10px;
                         color: $accent-color;
+
+                        &:hover {
+                            color: $light-color;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
                     }
                     &-content {
                         color: $light-color;
@@ -258,7 +266,7 @@ main {
                         margin-top: 10px;
                     }
                 }
-                .resizeable-tile {
+                .reviews-tile {
                     width: 80%;
                 }
             }
@@ -278,6 +286,17 @@ main {
 .link-text {
     color: $accent-color;
     text-decoration: underline;
+    &:hover {
+        color: $light-color;
+    }
+
+    &-alt {
+        color: $dark-color;
+        text-decoration: underline;
+        &:hover {
+            color: $light-color;
+        }
+    }
 }
 
 .accent-text {
